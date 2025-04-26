@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Message - Birthday Celebration</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Balloon animation */
+    .balloon {
+      position: absolute;
+      bottom: -100px;
+      width: 50px;
+      height: 70px;
+      background: pink;
+      border-radius: 50% 50% 50% 50%;
+      animation: float 10s infinite ease-in;
+      opacity: 0.7;
+    }
+    .balloon::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      width: 2px;
+      height: 20px;
+      background: #555;
+      transform: translateX(-50%);
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-100vh) translateX(20px) rotate(10deg);
+      }
+      100% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+      }
+    }
+
+    /* Different colors and positions */
+    .balloon:nth-child(1) { background: #FF69B4; left: 10%; animation-duration: 12s; }
+    .balloon:nth-child(2) { background: #FFD700; left: 30%; animation-duration: 10s; }
+    .balloon:nth-child(3) { background: #87CEFA; left: 50%; animation-duration: 14s; }
+    .balloon:nth-child(4) { background: #98FB98; left: 70%; animation-duration: 11s; }
+    .balloon:nth-child(5) { background: #FFA07A; left: 90%; animation-duration: 13s; }
+  </style>
+</head>
+
+<body class="message-page">
+
+  <!-- Balloons -->
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">🎉 Birthday Bash</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="message.html">Message</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="video.html">Video</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Message Section -->
+  <div class="message-container">
+    <h1 class="page-title">Special Birthday Messages 🎈</h1>
+
+    <div class="card-list">
+
+      <div class="message-card">
+        <h2>🌟 Infinite Happiness</h2>
+        <p>Wishing you infinite joy, endless smiles, and boundless success! 🥳 You deserve the world!</p>
+      </div>
+
+      <div class="message-card">
+        <h2>🌟 Alag Asaman</h2>
+        <p>Though we may be far apart, we are still connected, and I know you are always with me. Thank you for everything. Always shower your blessings and love upon me!🌠</p>
+      </div>
+
+      <div class="message-card">
+        <h2>🌟 You are the Best Brother</h2>
+        <p>From guiding me and showing me the best and right path, you have made me realize that I can do anything. I want to make you proud. Love you, BHAIYAA! Sending you lots of jhappis! ❤️</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>Created with ❤️ by Akshu | © 2025</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon">🎶</a>
+        <a href="#" class="social-icon">📷</a>
+        <a href="#" class="social-icon">📱</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

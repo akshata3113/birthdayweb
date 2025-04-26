@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Birthday Celebration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">🎉 Birthday Bash</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="message.html">Message</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="video.html">Video</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Balloons Layer (optional) -->
+  <div class="balloons">
+    <div class="balloon red"></div>
+    <div class="balloon blue"></div>
+    <div class="balloon yellow"></div>
+    <div class="balloon green"></div>
+    <div class="balloon pink"></div>
+  </div>
+
+  <!-- Carousel Section -->
+  <div class="carousel">
+    <button class="prev" onclick="moveSlide(-1)">❮</button>
+    <div class="slide-wrapper">
+      <div class="slides" id="slides">
+        <div class="slide">
+          <img src="img1.jpg" alt="Birthday Cake">
+          <div class="caption">
+            <h1>Happy Birthday, AJ! 🎸</h1>
+            <p>Let's make today unforgettable!</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img2.jpg" alt="Balloons Party">
+          <div class="caption">
+            <h1>I'm Always my Elder brother's Girl! 🎈</h1>
+            <p>Grateful for you</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img3.jpeg" alt="Celebration">
+          <div class="caption">
+            <h1>Lots of love 🎂</h1>
+            <p>Sweetest wishes for the sweetest soul!</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img4.jpg" alt="More Party">
+          <div class="caption">
+            <h1>Cheers to You! 🥳</h1>
+            <p>Today is YOUR day to shine bright!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="next" onclick="moveSlide(1)">❯</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Created with ❤️ and lots of 🎉 by Akshu</p>
+    <p>© 2025 All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
